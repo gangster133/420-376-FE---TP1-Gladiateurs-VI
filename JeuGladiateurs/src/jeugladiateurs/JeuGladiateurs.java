@@ -31,7 +31,6 @@ public class JeuGladiateurs {
         // **************************************************************************
         // <editor-fold defaultstate="collapsed" desc="Mécanique de combat">
         
-        
         // </editor-fold>
     }
 
