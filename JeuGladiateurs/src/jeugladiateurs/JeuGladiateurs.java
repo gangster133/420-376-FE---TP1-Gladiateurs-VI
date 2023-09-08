@@ -3,7 +3,6 @@ package jeugladiateurs;
 import personnages.Personnage;
 import combat.CompteurDeTour;
 import combat.AffichageEcran;
-import java.util.HashSet;
 import personnages.Mirmillon;
 import personnages.Retiaire;
 
