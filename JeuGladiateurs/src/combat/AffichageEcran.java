@@ -13,7 +13,7 @@ public class AffichageEcran {
         System.out.println(">>>>> Que le combat commence ! <<<<<");
         System.out.println("<<<<<<<<<<<<<<<<<<>>>>>>>>>>>>>>>>>>");
     }
-    
+
     public void afficherSeparateurDeTour() {
         // TODO : Afficher un retour à la ligne, suivi d'une ligne d'astérisques, tel que montré dans l'énoncé
     }

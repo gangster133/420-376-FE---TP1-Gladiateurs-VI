@@ -38,7 +38,6 @@ public class Personnage {
     // **************************************************************************
     // **************************************************************************
     // <editor-fold defaultstate="collapsed" desc="Getters et setters">
-
     public String getNom() {
         return nom;
     }
@@ -78,22 +77,21 @@ public class Personnage {
     public void setInitiative(int initiative) {
         this.initiative = initiative;
     }
-    
-    // </editor-fold>
 
+    // </editor-fold>
     // **************************************************************************
     // **************************************************************************
     // **************************************************************************
     // <editor-fold defaultstate="collapsed" desc="Mécanique de jeu">
     public void afficherInfosPersonnage() {
         String statut = pointsDeVie > 0 ? "Vivant" : "Mort";
-        
-        System.out.println("\n"+nom);
-        System.out.println("\tAttaque : "+valeurMaxAttaque);
-        System.out.println("\tDéfense : "+valeurDefense);
-        System.out.println("\tPoints de vie : "+pointsDeVie);
-        System.out.println("\tInitiatives : "+initiative);
-        System.out.println("\tStatut : "+statut);
+
+        System.out.println("\n" + nom);
+        System.out.println("\tAttaque : " + valeurMaxAttaque);
+        System.out.println("\tDéfense : " + valeurDefense);
+        System.out.println("\tPoints de vie : " + pointsDeVie);
+        System.out.println("\tInitiatives : " + initiative);
+        System.out.println("\tStatut : " + statut);
     }
 
     private int attaqueCalcul() {
