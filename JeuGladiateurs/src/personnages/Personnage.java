@@ -98,7 +98,7 @@ public class Personnage {
     }
 
     private int attaqueCalcul() {
-        int attaque = rand.nextInt(valeurMaxAttaque - 0 + 1) + 0;
+        int attaque = rand.nextInt(valeurMaxAttaque - 0 + 1);
         return attaque;
     }
 
@@ -117,7 +117,7 @@ public class Personnage {
     }
 
     public void setNewInitiativeRandom() {
-        // TODO : Modifier de façon aléatoire la valeur INI du personnage.
+        initiative = rand.nextInt(101);
     }
     // </editor-fold>
 }
