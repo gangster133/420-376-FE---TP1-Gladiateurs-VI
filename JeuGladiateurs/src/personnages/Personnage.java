@@ -97,7 +97,7 @@ public class Personnage {
         System.out.println("\tStatut : " + statut);
     }
 
-    private int attaqueCalcul() {
+    protected int attaqueCalcul() {
         int attaque = rand.nextInt(valeurMaxAttaque - 0 + 1);
         return attaque;
     }
