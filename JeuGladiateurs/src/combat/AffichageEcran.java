@@ -11,7 +11,7 @@ public class AffichageEcran {
     public void afficherDebutCombat() {
         System.out.println("\n<<<<<<<<<<<<<<<<<<>>>>>>>>>>>>>>>>>>");
         System.out.println(">>>>> Que le combat commence ! <<<<<");
-        System.out.println("<<<<<<<<<<<<<<<<<<>>>>>>>>>>>>>>>>>>");
+        System.out.println("<<<<<<<<<<<<<<<<<<>>>>>>>>>>>>>>>>>>\n");
     }
 
     public void afficherSeparateurDeTour() {
@@ -25,7 +25,7 @@ public class AffichageEcran {
     }
 
     public void afficheVictoire(Personnage personnage1, Personnage personnage2) {
-        // TODO : Afficher le gagnant du combat, tel que montré dans l'énoncé
+        
     }
     // </editor-fold>
 }
