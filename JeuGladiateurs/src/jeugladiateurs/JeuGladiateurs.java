@@ -39,7 +39,7 @@ public class JeuGladiateurs {
                     Bob.frapperPersonnage(Igor);
                     i = Igor.getPointsDeVie()==0 ? 100 : i;
                 }
-                if (Igor.getInitiative() == i) {
+                if ((Igor.getInitiative() == i)&&(Igor.getPointsDeVie()>0)) {
                     Igor.frapperPersonnage(Bob);
                     i = Bob.getPointsDeVie()==0 ? 100 : i;
                 }
