@@ -111,7 +111,7 @@ public class Personnage {
         dommage = attaque - defense;
         dommage = dommage < 0 ? 0 : dommage;
         personnageCible.pointsDeVie = personnageCible.pointsDeVie > dommage ? personnageCible.pointsDeVie - dommage : 0;
-        System.out.println("\n"+nom + " attaque avec une puissance de : " + attaque);
+        System.out.println("\n" + nom + " attaque avec une puissance de : " + attaque);
         System.out.println(personnageCible.nom + " a une défense de : " + defense);
         System.out.println("Les dommages sont donc de  : " + dommage);
     }

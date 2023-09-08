@@ -32,19 +32,24 @@ public class JeuGladiateurs {
         // **************************************************************************
         // <editor-fold defaultstate="collapsed" desc="Mécanique de combat">
         do {
-        tour.afficheTour();
-        for (int i = 0; i < 100; i++) {
-            if (Bob.getInitiative()==i) {Bob.frapperPersonnage(Igor);}
-            if (Igor.getInitiative()==i) {Igor.frapperPersonnage(Bob);}
-        }
-        affichage.afficherSeparateurInfosPerso();
-        Bob.afficherInfosPersonnage();
-        Igor.afficherInfosPersonnage();
-        Bob.setNewInitiativeRandom();
-        Igor.setNewInitiativeRandom();
-        tour.augmenteTour();
-        affichage.afficherSeparateurDeTour();
-        } while (Bob.getPointsDeVie()>0&&Igor.getPointsDeVie()>0);
+            tour.afficheTour();
+            for (int i = 0; i < 100; i++) {
+                if (Bob.getInitiative() == i) {
+                    Bob.frapperPersonnage(Igor);
+                }
+                if (Igor.getInitiative() == i) {
+                    Igor.frapperPersonnage(Bob);
+                }
+            }
+            affichage.afficherSeparateurInfosPerso();
+            Bob.afficherInfosPersonnage();
+            Igor.afficherInfosPersonnage();
+            Bob.setNewInitiativeRandom();
+            Igor.setNewInitiativeRandom();
+            tour.augmenteTour();
+            affichage.afficherSeparateurDeTour();
+        } while (Bob.getPointsDeVie() > 0 && Igor.getPointsDeVie() > 0);
+        affichage.afficheVictoire(Bob, Igor);
         // </editor-fold>
     }
 

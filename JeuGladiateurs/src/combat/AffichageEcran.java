@@ -25,7 +25,8 @@ public class AffichageEcran {
     }
 
     public void afficheVictoire(Personnage personnage1, Personnage personnage2) {
-        
+        String gagnant = personnage1.getPointsDeVie() > 0 ? personnage1.getNom() : personnage2.getNom();
+        System.out.println("\n" + gagnant + " gagne le combat !!!\n");
     }
     // </editor-fold>
 }
